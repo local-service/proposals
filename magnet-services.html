@@ -1,0 +1,1422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Magnet Marketing SEO — Home Service Marketing Gilbert, AZ</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy:#0D2645;
+  --navy2:#1B3A5C;
+  --blue:#1B4F8A;
+  --blue-bright:#2E7FD4;
+  --blue-lt:#EBF3FB;
+  --blue-mid:#D0E4F5;
+  --silver:#B6C4D0;
+  --off:#F4F6F9;
+  --white:#FFFFFF;
+  --text:#1A2332;
+  --muted:#5A6B7D;
+  --border:#DDE3EA;
+  --green:#16A34A;
+  --green-lt:#DCFCE7;
+  --amber:#B45309;
+  --amber-lt:#FEF3C7;
+  --red:#DC2626;
+  --red-lt:#FEE2E2;
+  --r:10px;--r2:16px;--r3:24px;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;color:var(--text);background:var(--white);line-height:1.6;-webkit-font-smoothing:antialiased}
+
+/* ── NAV ── */
+#nav{
+  position:fixed;top:0;left:0;right:0;z-index:500;
+  background:rgba(255,255,255,0.97);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--border);
+  height:64px;display:flex;align-items:center;
+  padding:0 2rem;gap:2rem;
+  box-shadow:0 1px 8px rgba(0,0,0,0.06);
+}
+.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none;flex-shrink:0}
+.nav-logo img{height:36px;width:auto}
+.nav-logo-text{display:flex;flex-direction:column;line-height:1}
+.nav-logo-main{font-size:15px;font-weight:800;color:var(--navy);letter-spacing:0.02em}
+.nav-logo-sub{font-size:9px;font-weight:600;color:var(--blue);letter-spacing:0.12em;text-transform:uppercase}
+.nav-links{display:flex;gap:2px;list-style:none;overflow-x:auto;scrollbar-width:none}
+.nav-links::-webkit-scrollbar{display:none}
+.nav-links a{color:var(--muted);text-decoration:none;font-size:13px;font-weight:500;padding:6px 12px;border-radius:7px;transition:all .15s;white-space:nowrap}
+.nav-links a:hover,.nav-links a.active{background:var(--blue-lt);color:var(--blue)}
+.nav-right{margin-left:auto;display:flex;align-items:center;gap:10px;flex-shrink:0}
+.nav-phone{font-size:13px;font-weight:600;color:var(--navy);text-decoration:none}
+.nav-cta{background:var(--blue-bright);color:#fff;border:none;font-family:'Inter',sans-serif;font-size:13px;font-weight:600;padding:8px 18px;border-radius:8px;cursor:pointer;white-space:nowrap;text-decoration:none;transition:background .15s}
+.nav-cta:hover{background:var(--blue)}
+.nav-mobile-menu{display:none;background:none;border:none;cursor:pointer;flex-direction:column;gap:4px;padding:4px}
+.nav-mobile-menu span{width:22px;height:2px;background:var(--navy);border-radius:2px;display:block;transition:all .2s}
+
+/* ── MOBILE NAV DRAWER ── */
+.mobile-drawer{display:none;position:fixed;top:64px;left:0;right:0;bottom:0;background:white;z-index:499;padding:1.5rem 2rem;flex-direction:column;gap:4px;overflow-y:auto}
+.mobile-drawer.open{display:flex}
+.mobile-drawer a{color:var(--text);text-decoration:none;font-size:16px;font-weight:500;padding:12px 16px;border-radius:10px;transition:all .15s}
+.mobile-drawer a:hover{background:var(--blue-lt);color:var(--blue)}
+.mobile-drawer .mobile-cta{background:var(--blue-bright);color:#fff;text-align:center;margin-top:1rem;border-radius:10px;padding:14px;font-weight:700}
+
+/* ── SHARED ── */
+.section{padding:80px 2rem}
+.wrap{max-width:960px;margin:0 auto}
+.wrap-sm{max-width:680px;margin:0 auto}
+.lbl{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--blue-bright);margin-bottom:.5rem}
+.h1{font-size:clamp(32px,5vw,54px);font-weight:900;color:var(--navy);line-height:1.05;letter-spacing:-0.02em}
+.h2{font-size:clamp(26px,3.5vw,40px);font-weight:800;color:var(--navy);line-height:1.1;letter-spacing:-0.02em;margin-bottom:.6rem}
+.h3{font-size:clamp(20px,2.5vw,26px);font-weight:700;color:var(--navy);line-height:1.2;margin-bottom:.5rem}
+.accent{color:var(--blue-bright)}
+.sub{font-size:16px;color:var(--muted);line-height:1.7;margin-bottom:2rem}
+.sub-sm{font-size:14px;color:var(--muted);line-height:1.7}
+.divider{border:none;border-top:1px solid var(--border);margin:3rem 0}
+.bg-off{background:var(--off)}
+.bg-navy{background:var(--navy)}
+.bg-blue{background:var(--blue)}
+
+/* ── BUTTONS ── */
+.btn{display:inline-flex;align-items:center;gap:6px;font-family:'Inter',sans-serif;font-size:14px;font-weight:600;padding:12px 24px;border-radius:9px;cursor:pointer;text-decoration:none;transition:all .15s;border:none}
+.btn-primary{background:var(--blue-bright);color:#fff}
+.btn-primary:hover{background:var(--blue)}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-navy:hover{background:var(--navy2)}
+.btn-outline{background:transparent;color:var(--navy);border:1.5px solid var(--border)}
+.btn-outline:hover{border-color:var(--blue-bright);color:var(--blue-bright)}
+.btn-white{background:#fff;color:var(--navy)}
+.btn-white:hover{background:var(--off)}
+.btn-lg{font-size:16px;padding:15px 30px;border-radius:11px}
+
+/* ── BADGE ── */
+.badge{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:700;padding:4px 10px;border-radius:20px;letter-spacing:0.04em}
+.badge-blue{background:var(--blue-lt);color:var(--blue)}
+.badge-green{background:var(--green-lt);color:var(--green)}
+.badge-amber{background:var(--amber-lt);color:var(--amber)}
+.badge-navy{background:rgba(255,255,255,.15);color:rgba(255,255,255,.9)}
+.badge-dot::before{content:'';width:6px;height:6px;border-radius:50%;background:currentColor;flex-shrink:0}
+
+/* ── CARDS ── */
+.card{background:#fff;border-radius:var(--r2);border:1px solid var(--border);padding:1.5rem;transition:box-shadow .2s,transform .2s}
+.card:hover{box-shadow:0 4px 20px rgba(0,0,0,.08);transform:translateY(-2px)}
+.card-icon{width:44px;height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:.9rem;flex-shrink:0}
+.ci-blue{background:var(--blue-lt)}
+.ci-green{background:var(--green-lt)}
+.ci-amber{background:var(--amber-lt)}
+.ci-red{background:var(--red-lt)}
+.card-title{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:.4rem}
+.card-desc{font-size:13.5px;color:var(--muted);line-height:1.6}
+
+/* ── CALLOUTS ── */
+.callout{border-radius:var(--r);padding:1.1rem 1.3rem;margin:1.3rem 0;border-left:3px solid}
+.callout-blue{background:var(--blue-lt);border-color:var(--blue-bright)}
+.callout-blue .ct{color:var(--blue);font-size:13px;font-weight:700;margin-bottom:4px}
+.callout-blue .cb{color:var(--blue);font-size:13px;line-height:1.6;opacity:.85}
+.callout-green{background:var(--green-lt);border-color:var(--green)}
+.callout-green .ct{color:#166534;font-size:13px;font-weight:700;margin-bottom:4px}
+.callout-green .cb{color:#166534;font-size:13px;line-height:1.6}
+.callout-amber{background:var(--amber-lt);border-color:var(--amber)}
+.callout-amber .ct{color:var(--amber);font-size:13px;font-weight:700;margin-bottom:4px}
+.callout-amber .cb{color:var(--amber);font-size:13px;line-height:1.6}
+
+/* ── GRID HELPERS ── */
+.grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.2rem}
+.grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.2rem}
+.grid-4{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem}
+
+/* ── STAT BLOCKS ── */
+.stats-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1px;background:var(--border);border-radius:var(--r2);overflow:hidden;margin-bottom:2rem}
+.stat-item{background:#fff;padding:1.3rem 1rem;text-align:center}
+.stat-n{font-size:30px;font-weight:900;color:var(--navy);display:block;line-height:1;margin-bottom:4px}
+.stat-l{font-size:12px;color:var(--muted);line-height:1.4}
+
+/* ═══════════════════════════════════════════
+   HERO
+═══════════════════════════════════════════ */
+#home{
+  padding:120px 2rem 80px;
+  background:linear-gradient(160deg,var(--off) 0%,#fff 60%,var(--blue-lt) 100%);
+  position:relative;overflow:hidden;
+}
+#home::before{
+  content:'';position:absolute;top:-200px;right:-200px;
+  width:600px;height:600px;border-radius:50%;
+  background:radial-gradient(circle,rgba(46,127,212,.06) 0%,transparent 70%);
+  pointer-events:none;
+}
+.hero-inner{max-width:960px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+.hero-badge{display:inline-flex;align-items:center;gap:6px;background:var(--blue-lt);border:1px solid var(--blue-mid);color:var(--blue);font-size:11.5px;font-weight:700;padding:5px 13px;border-radius:20px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:1.3rem}
+.hero-badge::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--blue-bright);flex-shrink:0}
+.hero h1{font-size:clamp(34px,4.5vw,52px);font-weight:900;color:var(--navy);line-height:1.05;letter-spacing:-0.025em;margin-bottom:1.2rem}
+.hero-sub{font-size:17px;color:var(--muted);line-height:1.7;margin-bottom:2rem;max-width:460px}
+.hero-btns{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:2rem}
+.hero-trust{display:flex;align-items:center;gap:.6rem;font-size:12.5px;color:var(--muted)}
+.hero-trust-dot{width:5px;height:5px;border-radius:50%;background:var(--green);flex-shrink:0}
+.hero-right{position:relative}
+.hero-card-stack{display:flex;flex-direction:column;gap:.8rem}
+.hero-stat-card{background:#fff;border-radius:var(--r2);border:1px solid var(--border);padding:1rem 1.2rem;box-shadow:0 2px 12px rgba(0,0,0,.06)}
+.hero-stat-card.featured{background:var(--navy);border-color:var(--navy)}
+.hsc-label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.07em;margin-bottom:.3rem}
+.hsc-label.light{color:var(--silver)}
+.hsc-label.dark{color:var(--muted)}
+.hsc-val{font-size:26px;font-weight:900;line-height:1}
+.hsc-val.light{color:#fff}
+.hsc-val.dark{color:var(--navy)}
+.hsc-note{font-size:12px;margin-top:3px}
+.hsc-note.light{color:rgba(255,255,255,.6)}
+.hsc-note.green{color:var(--green);font-weight:600}
+.hero-pill{display:inline-flex;align-items:center;gap:5px;background:var(--green-lt);color:#166534;font-size:11px;font-weight:700;padding:3px 9px;border-radius:10px;margin-top:.4rem}
+
+/* ═══════════════════════════════════════════
+   PACKAGES SECTION
+═══════════════════════════════════════════ */
+.pkg-progression{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-radius:var(--r2);overflow:hidden;border:1px solid var(--border);margin-bottom:2.5rem}
+.prog-item{padding:1.3rem 1rem;text-align:center;background:#fff;position:relative}
+.prog-item:not(:last-child){border-right:1px solid var(--border)}
+.prog-item.active{background:var(--navy)}
+.prog-icon{font-size:26px;display:block;margin-bottom:.5rem}
+.prog-name{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:.2rem}
+.prog-name.light{color:#fff}
+.prog-price{font-size:12px;color:var(--muted)}
+.prog-price.light{color:var(--silver)}
+.prog-arrow{position:absolute;right:-12px;top:50%;transform:translateY(-50%);width:24px;height:24px;background:var(--off);border:1px solid var(--border);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--muted);z-index:1}
+
+.pkg-card{background:#fff;border-radius:var(--r3);border:1.5px solid var(--border);overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.04);transition:box-shadow .2s}
+.pkg-card:hover{box-shadow:0 6px 32px rgba(0,0,0,.1)}
+.pkg-card.featured{border-color:var(--blue-bright);box-shadow:0 4px 20px rgba(46,127,212,.15)}
+.pkg-hd{padding:1.8rem 2rem 1.4rem}
+.pkg-hd-navy{background:var(--navy)}
+.pkg-hd-dark-green{background:#0f3d2a}
+.pkg-hd-dark-blue{background:#0f1f40}
+.pkg-hd-dark-amber{background:#3d1a00}
+.pkg-step-badge{display:inline-block;font-size:10px;font-weight:700;padding:3px 9px;border-radius:20px;letter-spacing:.05em;text-transform:uppercase;margin-bottom:.8rem}
+.pkg-featured-badge{background:var(--green);color:#fff}
+.pkg-outline-badge{background:rgba(255,255,255,.12);color:rgba(255,255,255,.75)}
+.pkg-name{font-size:26px;font-weight:800;color:#fff;margin-bottom:.3rem;letter-spacing:-0.01em}
+.pkg-tagline{font-size:14px;color:rgba(255,255,255,.6);margin-bottom:1.3rem}
+.pkg-price-row{display:flex;align-items:baseline;gap:6px}
+.pkg-price{font-size:42px;font-weight:900;color:#fff;line-height:1;letter-spacing:-0.02em}
+.pkg-price-note{font-size:14px;color:rgba(255,255,255,.5)}
+.pkg-body{padding:1.8rem 2rem}
+.pkg-desc{font-size:14.5px;color:var(--muted);line-height:1.7;margin-bottom:1.5rem;padding-bottom:1.5rem;border-bottom:1px solid var(--border)}
+.pkg-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.4rem;margin-bottom:1.3rem}
+.pkg-col-title{font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--navy);margin-bottom:.7rem}
+.pkg-ul{list-style:none;display:flex;flex-direction:column;gap:6px}
+.pkg-ul li{font-size:13px;color:var(--muted);display:flex;gap:7px;align-items:flex-start;line-height:1.5}
+.pkg-ul li::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--blue-bright);flex-shrink:0;margin-top:5.5px}
+
+/* pricing table */
+.loc-tbl{width:100%;border-collapse:collapse;border-radius:var(--r);overflow:hidden;border:1px solid var(--border);margin-top:1rem}
+.loc-tbl th{background:var(--navy);color:var(--silver);font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;padding:10px 14px;text-align:left}
+.loc-tbl td{padding:11px 14px;font-size:13.5px;border-bottom:1px solid var(--border);background:#fff}
+.loc-tbl tr:last-child td{border-bottom:none}
+.loc-tbl tr.feat td{background:var(--blue-lt)}
+.loc-p{font-family:'Inter',sans-serif;font-size:17px;font-weight:800;color:var(--navy)}
+.loc-p.g{color:var(--green)}
+.loc-save{display:inline-block;background:var(--green-lt);color:var(--green);font-size:10.5px;font-weight:700;padding:2px 8px;border-radius:10px}
+
+/* ═══════════════════════════════════════════
+   COMPARISON TABLE
+═══════════════════════════════════════════ */
+.cmp-wrap{overflow-x:auto;border-radius:var(--r2);border:1px solid var(--border);box-shadow:0 2px 12px rgba(0,0,0,.05)}
+.cmp{width:100%;border-collapse:collapse;min-width:640px}
+.cmp thead th{background:var(--navy);color:#fff;font-size:12.5px;font-weight:700;padding:13px 14px;text-align:center}
+.cmp thead th:first-child{text-align:left;min-width:200px}
+.cmp .sr td{background:var(--off);font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);padding:7px 13px}
+.cmp tbody td{padding:9px 13px;font-size:13px;color:var(--muted);border-bottom:1px solid var(--border);text-align:center}
+.cmp tbody td:first-child{text-align:left;color:var(--text);font-weight:500;background:#fafbfc}
+.cmp tbody tr:last-child td{border-bottom:none}
+.cmp tbody tr:hover td{background:#fafffe}
+.ck{color:var(--green);font-weight:700;font-size:15px}
+.dk{color:#D1D5DB;font-size:17px}
+.pt{font-size:10.5px;font-weight:700;color:var(--blue-bright)}
+
+/* ═══════════════════════════════════════════
+   CASE STUDIES
+═══════════════════════════════════════════ */
+.case-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.2rem}
+.case-card{background:#fff;border-radius:var(--r2);border:1px solid var(--border);overflow:hidden}
+.case-hd{background:var(--navy);padding:.9rem 1.2rem}
+.case-co{font-size:15px;font-weight:800;color:#fff;margin-bottom:2px}
+.case-ni{font-size:12px;color:var(--silver)}
+.case-bd{padding:1.1rem 1.2rem}
+.case-challenge{font-size:13px;color:var(--muted);margin-bottom:.9rem;line-height:1.5}
+.case-results{display:flex;flex-direction:column;gap:5px}
+.case-r{font-size:13px;font-weight:600;color:#166534;display:flex;gap:6px;align-items:flex-start}
+.case-r::before{content:'↑';color:var(--green);flex-shrink:0;font-weight:800}
+
+/* ═══════════════════════════════════════════
+   SERVICE PAGES (inside sections)
+═══════════════════════════════════════════ */
+.service-hero{background:var(--navy);border-radius:var(--r3);padding:2.5rem;margin-bottom:2rem;position:relative;overflow:hidden}
+.service-hero::before{content:'';position:absolute;top:-100px;right:-100px;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(46,127,212,.12) 0%,transparent 70%);pointer-events:none}
+.sh-eyebrow{display:inline-flex;align-items:center;gap:6px;background:rgba(46,127,212,.2);border:1px solid rgba(46,127,212,.3);color:#7EB8FF;font-size:11px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.07em;text-transform:uppercase;margin-bottom:1rem}
+.sh-eyebrow::before{content:'';width:5px;height:5px;border-radius:50%;background:#7EB8FF}
+.sh-title{font-size:clamp(26px,3.5vw,38px);font-weight:900;color:#fff;line-height:1.1;margin-bottom:.8rem;letter-spacing:-0.02em}
+.sh-sub{font-size:15px;color:var(--silver);line-height:1.7;max-width:580px;margin-bottom:1.5rem}
+.sh-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:1px;background:rgba(255,255,255,.08);border-radius:var(--r);overflow:hidden}
+.sh-stat{background:rgba(0,0,0,.15);padding:1rem .8rem;text-align:center}
+.sh-stat-n{font-size:22px;font-weight:900;color:#fff;display:block;line-height:1;margin-bottom:3px}
+.sh-stat-l{font-size:11px;color:var(--silver);line-height:1.3}
+
+/* tab navigation for services */
+.service-tabs{display:flex;gap:4px;border-bottom:2px solid var(--border);margin-bottom:2rem;overflow-x:auto;scrollbar-width:none;padding-bottom:0}
+.service-tabs::-webkit-scrollbar{display:none}
+.stab{font-size:13px;font-weight:600;color:var(--muted);padding:10px 16px;cursor:pointer;border:none;background:none;border-bottom:2px solid transparent;margin-bottom:-2px;white-space:nowrap;transition:all .15s;font-family:'Inter',sans-serif}
+.stab:hover{color:var(--navy)}
+.stab.active{color:var(--blue-bright);border-bottom-color:var(--blue-bright)}
+.tab-panel{display:none}
+.tab-panel.active{display:block}
+
+/* deliverables grid */
+.dels{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-bottom:1.5rem}
+.del{background:#fff;border-radius:var(--r2);border:1px solid var(--border);padding:1.2rem}
+.del-icon{font-size:22px;margin-bottom:.5rem;display:block}
+.del-title{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:.3rem}
+.del-desc{font-size:13px;color:var(--muted);line-height:1.5}
+.del-tag{display:inline-block;font-size:10px;font-weight:700;padding:2px 7px;border-radius:8px;margin-top:.4rem}
+.dt-blue{background:var(--blue-lt);color:var(--blue)}
+.dt-green{background:var(--green-lt);color:var(--green)}
+.dt-amber{background:var(--amber-lt);color:var(--amber)}
+
+/* timeline */
+.timeline{display:flex;flex-direction:column;gap:0;margin-bottom:1.5rem}
+.tl-item{display:flex;gap:1.1rem;padding-bottom:1.2rem;position:relative}
+.tl-item:not(:last-child)::before{content:'';position:absolute;left:16px;top:34px;bottom:0;width:1px;background:var(--border)}
+.tl-n{width:34px;height:34px;border-radius:50%;background:var(--navy);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:#fff;z-index:1}
+.tl-title{font-size:14.5px;font-weight:700;color:var(--navy);margin:6px 0 3px}
+.tl-desc{font-size:13px;color:var(--muted);line-height:1.6}
+
+/* geogrid */
+.geo-wrap{background:var(--navy);border-radius:var(--r2);padding:1.4rem;margin:1.2rem 0}
+.geo-title{font-size:14px;font-weight:700;color:#fff;margin-bottom:.3rem}
+.geo-sub{font-size:12px;color:var(--silver);margin-bottom:1rem}
+.geo-grids{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.geo-lbl{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:.5rem}
+.geo-lbl.before{color:#F09595}
+.geo-lbl.after{color:#6EDBB4}
+.geo-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:3px}
+.geo-cell{width:100%;aspect-ratio:1;border-radius:3px;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;color:#fff}
+
+/* lsa bar */
+.bar-wrap{background:#fff;border-radius:var(--r2);border:1px solid var(--border);overflow:hidden;margin:1.2rem 0}
+.bar-hd{background:var(--navy);padding:.8rem 1.2rem;display:flex;align-items:center;gap:.6rem}
+.bar-title{font-size:13.5px;font-weight:700;color:#fff}
+.bar-badge{background:var(--green);color:#fff;font-size:10px;font-weight:700;padding:2px 7px;border-radius:8px}
+.bar-body{padding:1.1rem 1.2rem}
+.bar-row{display:flex;align-items:center;gap:.8rem;margin-bottom:.6rem}
+.bar-row:last-child{margin-bottom:0}
+.bar-label{font-size:12px;color:var(--muted);width:65px;flex-shrink:0;text-align:right}
+.bar-track{flex:1;background:var(--off);border-radius:4px;height:9px}
+.bar-fill{height:9px;border-radius:4px;background:var(--green)}
+.bar-val{font-size:12px;font-weight:700;color:var(--navy);width:30px;flex-shrink:0}
+
+/* neg keyword visual */
+.neg-mock{background:#0f1117;border-radius:var(--r2);padding:1.3rem;margin:1.2rem 0}
+.neg-title{font-size:13.5px;font-weight:700;color:#fff;margin-bottom:.3rem}
+.neg-sub{font-size:12px;color:#888;margin-bottom:.9rem}
+.neg-rows{display:flex;flex-direction:column;gap:.4rem}
+.neg-row{display:flex;align-items:center;gap:.7rem;background:#1e2130;border-radius:7px;padding:.55rem .8rem}
+.neg-kw{font-size:12.5px;color:#fff;flex:1}
+.neg-impr{font-size:11px;color:#888;width:70px;text-align:right;flex-shrink:0}
+.neg-action{font-size:10.5px;font-weight:700;padding:2px 7px;border-radius:6px;flex-shrink:0}
+.neg-added{background:#FEE2E2;color:#DC2626}
+.neg-kept{background:#DCFCE7;color:#16A34A}
+
+/* inbox mock */
+.inbox-mock{background:#fff;border-radius:var(--r2);border:1px solid var(--border);overflow:hidden;margin:1.2rem 0}
+.inbox-hd{background:var(--navy);padding:.8rem 1.2rem;display:flex;align-items:center;gap:.7rem}
+.inbox-title{font-size:13.5px;font-weight:700;color:#fff}
+.inbox-badge{background:var(--green);color:#fff;font-size:10px;font-weight:700;padding:2px 7px;border-radius:8px}
+.inbox-chs{display:flex;gap:.4rem;padding:.6rem 1.2rem;border-bottom:1px solid var(--border);background:#fafbfc;overflow-x:auto}
+.inbox-ch{font-size:11.5px;font-weight:600;padding:4px 10px;border-radius:8px;white-space:nowrap;border:1px solid var(--border);background:#fff;cursor:pointer;color:var(--muted)}
+.inbox-ch.active{background:var(--navy);color:#fff;border-color:var(--navy)}
+.inbox-msgs{display:flex;flex-direction:column}
+.inbox-msg{padding:.8rem 1.2rem;border-bottom:1px solid var(--border);display:flex;gap:.7rem;align-items:flex-start}
+.inbox-msg:last-child{border-bottom:none}
+.inbox-av{width:34px;height:34px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#fff}
+.inbox-name{font-size:13px;font-weight:600;color:var(--text);margin-bottom:2px}
+.inbox-preview{font-size:12px;color:var(--muted);line-height:1.4}
+.inbox-meta{margin-left:auto;text-align:right;flex-shrink:0}
+.inbox-time{font-size:11px;color:var(--muted);margin-bottom:3px}
+.inbox-src{font-size:10px;font-weight:700;padding:2px 6px;border-radius:6px}
+.src-sms{background:#DCFCE7;color:#166534}
+.src-fb{background:#EBF3FF;color:#1877F2}
+.src-email{background:#FEF3C7;color:#92400E}
+.src-chat{background:#EDE9FE;color:#6D28D9}
+
+/* dashboard mock */
+.dash-mock{background:#0f1117;border-radius:var(--r2);overflow:hidden;border:1px solid rgba(255,255,255,.07);margin:1.2rem 0;box-shadow:0 8px 32px rgba(0,0,0,.3)}
+.dash-bar{background:#1a1d27;padding:.5rem 1rem;display:flex;align-items:center;gap:.4rem;border-bottom:1px solid rgba(255,255,255,.05)}
+.dash-dot{width:9px;height:9px;border-radius:50%}
+.dash-title{font-size:11px;color:#666;margin-left:.3rem}
+.dash-body{padding:1rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:.7rem}
+.dash-tile{background:#1e2130;border-radius:8px;padding:.8rem;border:1px solid rgba(255,255,255,.04)}
+.dash-lbl{font-size:9.5px;color:#666;text-transform:uppercase;letter-spacing:.06em;margin-bottom:.3rem}
+.dash-val{font-size:20px;font-weight:800;line-height:1;margin-bottom:2px}
+.dash-chg{font-size:10px;font-weight:600}
+.dash-chg.up{color:#4ade80}
+.dash-chg.neutral{color:#666}
+.dash-chart{background:#1e2130;border-radius:8px;padding:.8rem;border:1px solid rgba(255,255,255,.04);grid-column:span 2}
+.dash-chart-lbl{font-size:9.5px;color:#666;text-transform:uppercase;letter-spacing:.06em;margin-bottom:.5rem}
+.dash-bars{display:flex;align-items:flex-end;gap:3px;height:40px}
+.dash-bar-item{flex:1;border-radius:2px 2px 0 0}
+
+/* pipeline */
+.pipeline{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-radius:var(--r2);border:1px solid var(--border);overflow:hidden;margin:1.2rem 0}
+.pl-stage{border-right:1px solid var(--border)}
+.pl-stage:last-child{border-right:none}
+.pl-hd{padding:.6rem .8rem;font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;text-align:center}
+.pl-cards{padding:.5rem;background:#fafbfc;min-height:100px;display:flex;flex-direction:column;gap:.4rem}
+.pl-card{background:#fff;border-radius:6px;padding:.5rem .7rem;border:1px solid var(--border)}
+.pl-card-name{font-size:12px;font-weight:700;color:var(--navy);margin-bottom:1px}
+.pl-card-detail{font-size:11px;color:var(--muted)}
+
+/* review page */
+.review-flow{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:0;border-radius:var(--r2);overflow:hidden;border:1px solid var(--border);margin:1.2rem 0}
+.rf-step{padding:1.1rem .8rem;text-align:center;background:#fff;border-right:1px solid var(--border)}
+.rf-step:last-child{border-right:none}
+.rf-icon{font-size:22px;display:block;margin-bottom:.4rem}
+.rf-title{font-size:12.5px;font-weight:700;color:var(--navy);margin-bottom:.2rem}
+.rf-desc{font-size:11.5px;color:var(--muted);line-height:1.4}
+.rf-time{font-size:10px;font-weight:700;color:var(--blue-bright);margin-top:.3rem;display:block}
+
+/* ═══════════════════════════════════════════
+   CONTACT SECTION
+═══════════════════════════════════════════ */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start}
+.contact-info-item{display:flex;gap:.9rem;align-items:flex-start;margin-bottom:1.3rem}
+.ci-icon-wrap{width:40px;height:40px;border-radius:10px;background:var(--blue-lt);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:18px}
+.ci-label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);margin-bottom:2px}
+.ci-value{font-size:15px;font-weight:700;color:var(--navy);text-decoration:none}
+.ci-value:hover{color:var(--blue-bright)}
+.contact-form{background:#fff;border-radius:var(--r2);border:1px solid var(--border);padding:2rem}
+.form-group{margin-bottom:1.2rem}
+.form-label{display:block;font-size:13px;font-weight:600;color:var(--navy);margin-bottom:.4rem}
+.form-input{width:100%;padding:10px 14px;border:1.5px solid var(--border);border-radius:8px;font-family:'Inter',sans-serif;font-size:14px;color:var(--text);transition:border-color .15s;background:#fff}
+.form-input:focus{outline:none;border-color:var(--blue-bright)}
+.form-select{width:100%;padding:10px 14px;border:1.5px solid var(--border);border-radius:8px;font-family:'Inter',sans-serif;font-size:14px;color:var(--text);background:#fff;cursor:pointer}
+.form-select:focus{outline:none;border-color:var(--blue-bright)}
+.form-textarea{width:100%;padding:10px 14px;border:1.5px solid var(--border);border-radius:8px;font-family:'Inter',sans-serif;font-size:14px;color:var(--text);resize:vertical;min-height:100px}
+.form-textarea:focus{outline:none;border-color:var(--blue-bright)}
+
+/* ═══════════════════════════════════════════
+   FOOTER
+═══════════════════════════════════════════ */
+footer{background:var(--navy);padding:48px 2rem 32px;margin-top:0}
+.footer-inner{max-width:960px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem}
+.footer-brand img{height:40px;margin-bottom:.8rem}
+.footer-brand-text{display:flex;flex-direction:column;line-height:1;margin-bottom:.8rem}
+.footer-brand-main{font-size:16px;font-weight:800;color:#fff;letter-spacing:.01em}
+.footer-brand-sub{font-size:10px;font-weight:600;color:var(--silver);letter-spacing:.12em;text-transform:uppercase}
+.footer-desc{font-size:13px;color:var(--silver);line-height:1.6;margin-bottom:1rem}
+.footer-contact{font-size:13px;color:var(--silver)}
+.footer-contact a{color:var(--silver);text-decoration:none}
+.footer-contact a:hover{color:#fff}
+.footer-col-title{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#fff;margin-bottom:.9rem}
+.footer-links{list-style:none;display:flex;flex-direction:column;gap:.5rem}
+.footer-links a{font-size:13px;color:var(--silver);text-decoration:none;transition:color .15s}
+.footer-links a:hover{color:#fff}
+.footer-bottom{max-width:960px;margin:2rem auto 0;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.08);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
+.footer-copy{font-size:12px;color:rgba(255,255,255,.4)}
+
+/* ── GUARANTEE BAR ── */
+.guarantee{background:var(--green-lt);border:1px solid rgba(22,163,74,.2);border-radius:var(--r2);padding:1.4rem 1.6rem;display:flex;gap:1rem;align-items:flex-start;margin:1.5rem 0}
+.g-icon{width:40px;height:40px;background:var(--green);border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:18px}
+.g-title{font-size:16px;font-weight:800;color:#166534;margin-bottom:.3rem}
+.g-body{font-size:13.5px;color:#166534;line-height:1.7;opacity:.85}
+
+/* ── FADE ANIMATIONS ── */
+.fade-up{opacity:0;transform:translateY(16px);transition:opacity .5s ease,transform .5s ease}
+.fade-up.visible{opacity:1;transform:none}
+
+/* ── RESPONSIVE ── */
+@media(max-width:860px){
+  .hero-inner{grid-template-columns:1fr}
+  .hero-right{display:none}
+  .footer-inner{grid-template-columns:1fr 1fr}
+  .contact-grid{grid-template-columns:1fr}
+  .pipeline{grid-template-columns:repeat(2,1fr)}
+  .pl-stage:nth-child(2){border-right:none}
+  .pl-stage:nth-child(3){border-top:1px solid var(--border)}
+}
+@media(max-width:640px){
+  #nav .nav-links{display:none}
+  .nav-phone{display:none}
+  .nav-mobile-menu{display:flex}
+  .section{padding:56px 1.2rem}
+  .pkg-hd{padding:1.3rem 1.4rem}
+  .pkg-body{padding:1.3rem 1.4rem}
+  .footer-inner{grid-template-columns:1fr}
+  .geo-grids{grid-template-columns:1fr}
+  .pipeline{grid-template-columns:1fr}
+  .pl-stage{border-right:none;border-bottom:1px solid var(--border)}
+  .pl-stage:last-child{border-bottom:none}
+  .pkg-progression{grid-template-columns:1fr}
+  .guarantee{flex-direction:column}
+  .contact-form{padding:1.3rem}
+  .review-flow{grid-template-columns:repeat(3,1fr)}
+  .dash-chart{grid-column:span 1}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="#home" class="nav-logo">
+    <img src="https://magnetmarketingseo.com/wp-content/uploads/2021/04/cropped-Untitled-design-37-90x68-1.png" alt="Magnet Marketing SEO" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+    <div class="nav-logo-text" style="display:none">
+      <span class="nav-logo-main">MAGNET</span>
+      <span class="nav-logo-sub">Marketing SEO</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#packages">Packages</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#results">Results</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="tel:+16233527017" class="nav-phone">(623) 352-7017</a>
+    <a href="#contact" class="nav-cta">Get Started</a>
+  </div>
+  <button class="nav-mobile-menu" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE DRAWER -->
+<div class="mobile-drawer" id="mobileDrawer">
+  <a href="#home" onclick="closeMenu()">Home</a>
+  <a href="#packages" onclick="closeMenu()">Packages</a>
+  <a href="#services" onclick="closeMenu()">Services</a>
+  <a href="#results" onclick="closeMenu()">Results</a>
+  <a href="#contact" onclick="closeMenu()">Contact</a>
+  <a href="tel:+16233527017" class="mobile-cta" onclick="closeMenu()">Call (623) 352-7017</a>
+</div>
+
+<!-- ═══ HERO ═══ -->
+<section id="home">
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hero-badge">Home Service SEO · Gilbert, AZ</div>
+      <h1 class="hero-h1" style="font-size:clamp(34px,4.5vw,52px);font-weight:900;color:var(--navy);line-height:1.05;letter-spacing:-0.025em;margin-bottom:1.2rem">We rank home service<br>companies <span class="accent">everywhere</span><br>their customers search.</h1>
+      <p class="hero-sub">Google Maps. Organic search. LSA. AI tools. Voice search. In-car GPS. Every package is built around the same goal — more calls, more booked jobs, and a live dashboard showing exactly what's working.</p>
+      <div class="hero-btns">
+        <a href="#packages" class="btn btn-primary btn-lg">See our packages</a>
+        <a href="#contact" class="btn btn-outline btn-lg">Talk to Bryce</a>
+      </div>
+      <div class="hero-trust">
+        <span class="hero-trust-dot"></span>
+        No lock-in contracts &nbsp;·&nbsp;
+        <span class="hero-trust-dot"></span>
+        Home service specialists only &nbsp;·&nbsp;
+        <span class="hero-trust-dot"></span>
+        Live reporting dashboard
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-card-stack">
+        <div class="hero-stat-card featured">
+          <div class="hsc-label light">Gravity Roofing — LSA leads</div>
+          <div class="hsc-val light">193</div>
+          <div class="hsc-note light">Leads in a single month · one location</div>
+          <span class="hero-pill">↑ from 50 leads in month 1</span>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:.8rem">
+          <div class="hero-stat-card">
+            <div class="hsc-label dark">Revenue generated</div>
+            <div class="hsc-val dark">$2M+</div>
+            <div class="hsc-note green">In 5 months</div>
+          </div>
+          <div class="hero-stat-card">
+            <div class="hsc-label dark">Contract type</div>
+            <div class="hsc-val dark" style="font-size:20px">Month-to-month</div>
+            <div class="hsc-note" style="color:var(--muted)">No lock-in. Ever.</div>
+          </div>
+        </div>
+        <div class="hero-stat-card">
+          <div class="hsc-label dark">Garage Door Solutions — first month of ads</div>
+          <div class="hsc-val dark">109 leads</div>
+          <div class="hsc-note green">Was getting 14 calls/month from 3 agencies combined</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PACKAGES ═══ -->
+<section id="packages" class="section bg-off">
+<div class="wrap">
+  <div class="lbl">Service Packages</div>
+  <h2 class="h2">Start where you are. Upgrade when you're ready.</h2>
+  <p class="sub">Every package builds on the one before it. Your GHL, GBP, and tracking carry forward at every level — no rebuilding, no starting over.</p>
+
+  <div class="pkg-progression">
+    <div class="prog-item">
+      <span class="prog-icon">🏗️</span>
+      <div class="prog-name">Foundation</div>
+      <div class="prog-price">$397/mo · LSA + infrastructure</div>
+    </div>
+    <div class="prog-item active" style="position:relative">
+      <span class="prog-icon">📍</span>
+      <div class="prog-name light">Maps Domination</div>
+      <div class="prog-price light">$1,197/mo · Google Maps rankings</div>
+    </div>
+    <div class="prog-item">
+      <span class="prog-icon">🌐</span>
+      <div class="prog-name">Omni Presence</div>
+      <div class="prog-price">$1,997/mo · Maps + organic + AI + everywhere</div>
+    </div>
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:1.5rem">
+
+    <!-- FOUNDATION -->
+    <div class="pkg-card fade-up" id="pkg-foundation">
+      <div class="pkg-hd pkg-hd-navy">
+        <div style="display:flex;gap:7px;flex-wrap:wrap;margin-bottom:.9rem">
+          <span class="pkg-step-badge pkg-outline-badge">Step 1 — Best starting point</span>
+        </div>
+        <div class="pkg-name">Foundation</div>
+        <div class="pkg-tagline">Get your infrastructure right and start generating leads on day one.</div>
+        <div class="pkg-price-row">
+          <span class="pkg-price">$397</span>
+          <span class="pkg-price-note">/ month</span>
+        </div>
+      </div>
+      <div class="pkg-body">
+        <p class="pkg-desc">Most businesses come to us for SEO, but the first thing we do is make sure the basics are right. We get your LSA running, set up your GHL dashboard, and make sure every lead gets captured and followed up on automatically.</p>
+        <div class="callout callout-green">
+          <div class="ct">LSA — fastest way to start generating leads</div>
+          <div class="cb">You pay per lead, not per click. Our AI automation handles scoring, replies, review requests, and disputes. We've had clients with 50+ leads in month one.</div>
+        </div>
+        <div class="pkg-grid">
+          <div>
+            <div class="pkg-col-title">LSA & Ads</div>
+            <ul class="pkg-ul">
+              <li>Full LSA setup and optimization</li>
+              <li>Google Guarantee badge facilitation</li>
+              <li>AI lead scoring automation (built in-house)</li>
+              <li>Auto message reply and review requests</li>
+              <li>Dispute management — invalid leads refunded</li>
+            </ul>
+          </div>
+          <div>
+            <div class="pkg-col-title">GHL / CRM</div>
+            <ul class="pkg-ul">
+              <li>Custom live reporting dashboard</li>
+              <li>Call tracking and recording</li>
+              <li>Missed call text-back automation</li>
+              <li>Centralized inbox — SMS, email, chat, FB</li>
+              <li>Social media posting tool</li>
+            </ul>
+          </div>
+          <div>
+            <div class="pkg-col-title">Website</div>
+            <ul class="pkg-ul">
+              <li>Uptime monitoring</li>
+              <li>Basic on-page and conversion optimization</li>
+              <li>Mobile and speed optimization</li>
+              <li>Elementor Pro, FlyingPress, TrustIndex included</li>
+            </ul>
+          </div>
+          <div>
+            <div class="pkg-col-title">Brand & Local</div>
+            <ul class="pkg-ul">
+              <li>GBP basic optimization</li>
+              <li>Geogrid rank tracking — <strong>5 keywords</strong></li>
+              <li>Apple Maps, Bing Places, data aggregators</li>
+              <li>TrustIndex review widget setup</li>
+              <li>Custom branded review landing page</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAPS DOMINATION -->
+    <div class="pkg-card featured fade-up" id="pkg-maps">
+      <div class="pkg-hd pkg-hd-dark-green">
+        <div style="display:flex;gap:7px;flex-wrap:wrap;margin-bottom:.9rem">
+          <span class="pkg-step-badge pkg-featured-badge">Most Popular</span>
+          <span class="pkg-step-badge pkg-outline-badge">Best long-term ROI</span>
+        </div>
+        <div class="pkg-name">Maps Domination</div>
+        <div class="pkg-tagline">Rank in the Google Maps 3-pack. Own your local market.</div>
+        <div class="pkg-price-row">
+          <span class="pkg-price">$1,197</span>
+          <span class="pkg-price-note">/ month — single location</span>
+        </div>
+      </div>
+      <div class="pkg-body">
+        <p class="pkg-desc">Ranking in Google Maps is the best long-term ROI for a home service company. Once you're in the top 3, calls come in without paying per click. This package focuses on Maps rankings specifically — not organic website SEO. We work on everything we can control: GBP, citations, content, and authority — every month.</p>
+        <div class="callout callout-blue">
+          <div class="ct">Maps Domination vs. Omni Presence</div>
+          <div class="cb">Maps Domination focuses on Google Maps rankings. Omni Presence adds full organic website SEO, AI search, short-form video, and full omni-channel coverage. Want to rank in Maps AND in Google's organic results? That's Omni Presence.</div>
+        </div>
+        <div class="pkg-grid">
+          <div>
+            <div class="pkg-col-title">GBP Management</div>
+            <ul class="pkg-ul">
+              <li>Everything in Foundation, plus:</li>
+              <li>2 GBP posts/week (repurposable to socials)</li>
+              <li>Monthly geo-tagged photo uploads</li>
+              <li>Q&A monitoring and responses</li>
+              <li>Geogrid rank tracking — <strong>10 keywords</strong></li>
+            </ul>
+          </div>
+          <div>
+            <div class="pkg-col-title">Citations & Authority</div>
+            <ul class="pkg-ul">
+              <li>20+ new citations built per month</li>
+              <li>Review profiles on third-party platforms</li>
+              <li>Reviews written on smaller directories</li>
+              <li>Monthly press release distribution</li>
+              <li>Competitor tracking and gap analysis</li>
+            </ul>
+          </div>
+          <div>
+            <div class="pkg-col-title">Monthly Content</div>
+            <ul class="pkg-ul">
+              <li>Monthly SEO blog post — written + published</li>
+              <li>Monthly YouTube video linked to GBP + site</li>
+              <li>AI artifacts for ChatGPT and Perplexity</li>
+              <li>Web2.0 publishing — Medium, Blogger, LinkedIn</li>
+            </ul>
+          </div>
+          <div>
+            <div class="pkg-col-title">Website + Reporting</div>
+            <ul class="pkg-ul">
+              <li>On-page SEO updates aligned to Maps goals</li>
+              <li>Local schema markup</li>
+              <li>Monthly strategy call</li>
+              <li>Live dashboard — all channels 24/7</li>
+            </ul>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="pkg-col-title" style="margin-bottom:.7rem">Multiple locations</div>
+        <table class="loc-tbl">
+          <thead><tr><th>Location</th><th>Monthly rate</th><th>vs. standalone</th></tr></thead>
+          <tbody>
+            <tr class="feat"><td><strong>1st location</strong> · Full package</td><td><span class="loc-p g">$1,197</span></td><td><span style="font-size:12px;color:var(--muted)">Base rate</span></td></tr>
+            <tr><td><strong>2nd location</strong></td><td><span class="loc-p">+$397/mo</span></td><td><span class="loc-save">Save $800/mo</span></td></tr>
+            <tr><td><strong>3rd location</strong></td><td><span class="loc-p">+$347/mo</span></td><td><span class="loc-save">Save $850/mo</span></td></tr>
+          </tbody>
+        </table>
+        <p style="font-size:12px;color:var(--muted);margin-top:.5rem;font-style:italic">3 locations = $1,197 + $397 + $347 = $1,941/mo vs. $3,591 standalone.</p>
+      </div>
+    </div>
+
+    <!-- OMNI PRESENCE -->
+    <div class="pkg-card fade-up" id="pkg-omni">
+      <div class="pkg-hd pkg-hd-dark-blue">
+        <div style="display:flex;gap:7px;flex-wrap:wrap;margin-bottom:.9rem">
+          <span class="pkg-step-badge" style="background:#534AB7;color:#fff">Maximum Coverage</span>
+          <span class="pkg-step-badge pkg-outline-badge">Maps + organic + AI + everywhere</span>
+        </div>
+        <div class="pkg-name">Omni Presence</div>
+        <div class="pkg-tagline">Every suburb. Every search. Every platform.</div>
+        <div class="pkg-price-row">
+          <span class="pkg-price">$1,997</span>
+          <span class="pkg-price-note">/ month — single location</span>
+        </div>
+      </div>
+      <div class="pkg-body">
+        <p class="pkg-desc">Maps Domination gets you ranking in Google Maps. Omni Presence adds full organic website SEO, deep page optimization, location pages, short-form video, AI search (ChatGPT, Perplexity), voice search, in-car GPS, and full omni-channel coverage. If someone searches for what you do anywhere in your market, the goal is for you to show up.</p>
+        <div class="callout callout-green">
+          <div class="ct">Everything in Maps Domination is included.</div>
+          <div class="cb">We don't remove anything — we add to it. Upgrading from Maps Domination is straightforward and nothing gets rebuilt.</div>
+        </div>
+        <div class="pkg-grid">
+          <div>
+            <div class="pkg-col-title">Added: Page Optimization</div>
+            <ul class="pkg-ul">
+              <li>1–2 pages fully optimized per month</li>
+              <li>Full competitor content audit (top 10)</li>
+              <li>Video embed, review widget, customer story</li>
+              <li>Geogrid tracking — <strong>15 keywords</strong></li>
+            </ul>
+          </div>
+          <div>
+            <div class="pkg-col-title">Added: Location Pages</div>
+            <ul class="pkg-ul">
+              <li>1–2 location pages built per month</li>
+              <li>Unique keyword content per suburb</li>
+              <li>Local schema and internal linking</li>
+            </ul>
+          </div>
+          <div>
+            <div class="pkg-col-title">Added: Video & Design</div>
+            <ul class="pkg-ul">
+              <li>Up to 8 short-form clips/month</li>
+              <li>YouTube Shorts, Reels, TikTok</li>
+              <li>Requires job site footage from you</li>
+              <li>Graphic design — mailers, social, door hangers</li>
+            </ul>
+          </div>
+          <div>
+            <div class="pkg-col-title">Added: AI & Full Web</div>
+            <ul class="pkg-ul">
+              <li>AI artifacts — Perplexity + Lovable</li>
+              <li>Voice search schema markup</li>
+              <li>In-car GPS and navigation submission</li>
+              <li>Reviews on 14+ third-party platforms</li>
+              <li>AI citation tracking in dashboard</li>
+            </ul>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="pkg-col-title" style="margin-bottom:.7rem">Multiple locations</div>
+        <table class="loc-tbl">
+          <thead><tr><th>Location</th><th>Monthly rate</th><th>vs. standalone</th></tr></thead>
+          <tbody>
+            <tr class="feat"><td><strong>1st location</strong> · Full package</td><td><span class="loc-p" style="color:#534AB7">$1,997</span></td><td><span style="font-size:12px;color:var(--muted)">Base rate</span></td></tr>
+            <tr><td><strong>2nd location</strong></td><td><span class="loc-p">+$597/mo</span></td><td><span class="loc-save">Save $1,400/mo</span></td></tr>
+            <tr><td><strong>3rd location</strong></td><td><span class="loc-p">+$497/mo</span></td><td><span class="loc-save">Save $1,500/mo</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- BRAND FOUNDATION -->
+    <div class="pkg-card fade-up" id="pkg-brand">
+      <div class="pkg-hd pkg-hd-dark-amber">
+        <div style="display:flex;gap:7px;flex-wrap:wrap;margin-bottom:.9rem">
+          <span class="pkg-step-badge pkg-outline-badge">One-Time Service · Add to any package</span>
+        </div>
+        <div class="pkg-name">Brand Foundation</div>
+        <div class="pkg-tagline">For businesses that never built their brand out properly.</div>
+        <div class="pkg-price-row">
+          <span class="pkg-price">$797</span>
+          <span class="pkg-price-note">one-time</span>
+        </div>
+      </div>
+      <div class="pkg-body">
+        <p class="pkg-desc">Most businesses put their brand together quickly when they started and no one ever went back to do it properly. Brand voice guide, logo, colors, typography, slogan, trust badges, social media setup, and a homepage hero mockup. One engagement. Everything documented in a brand kit you can hand to anyone.</p>
+        <div class="pkg-grid">
+          <div>
+            <div class="pkg-col-title">Brand Identity</div>
+            <ul class="pkg-ul">
+              <li>Brand voice and tone guide (AI-assisted)</li>
+              <li>Complete brand kit — colors, fonts, usage rules</li>
+              <li>Logo design — all versions and formats</li>
+              <li>Slogan and tagline creation</li>
+              <li>Trust badge audit and setup</li>
+            </ul>
+          </div>
+          <div>
+            <div class="pkg-col-title">Visual & Social</div>
+            <ul class="pkg-ul">
+              <li>Homepage hero mockup — 5 design concepts</li>
+              <li>Facebook, Instagram, Pinterest, YouTube, TikTok setup</li>
+              <li>Branded cover photos for every platform</li>
+              <li>All profiles connected to GHL and GBP</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Comparison Table -->
+  <div style="margin-top:3rem">
+    <div class="lbl">Feature Comparison</div>
+    <h3 class="h3">Everything side by side</h3>
+    <p class="sub-sm" style="margin-bottom:1.5rem">Nothing gets removed when you upgrade. Each package adds to the one before it.</p>
+    <div class="cmp-wrap fade-up">
+      <table class="cmp">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Foundation<br><span style="font-weight:400;font-size:10.5px">$397/mo</span></th>
+            <th>Maps Dom.<br><span style="font-weight:400;font-size:10.5px">$1,197/mo</span></th>
+            <th>Omni Pres.<br><span style="font-weight:400;font-size:10.5px">$1,997/mo</span></th>
+            <th>Brand<br><span style="font-weight:400;font-size:10.5px">$797 once</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="sr"><td colspan="5">Ads & Lead Capture</td></tr>
+          <tr><td>LSA setup + AI automation</td><td><span class="ck">✓</span></td><td><span class="ck">✓</span></td><td><span class="ck">✓</span></td><td><span class="dk">—</span></td></tr>
+          <tr><td>Google Guarantee badge</td><td><span class="ck">✓</span></td><td><span class="ck">✓</span></td><td><span class="ck">✓</span></td><td><span class="dk">—</span></td></tr>
+          <tr><td>GHL CRM + live dashboard</td><td><span class="ck">✓</span></td><td><span class="ck">✓</span></td><td><span class="ck">✓</span></td><td><span class="dk">—</span></td></tr>
+          <tr><td>Missed call text-back</td><td><span class="ck">✓</span></td><td><span class="ck">✓</span></td><td><span class="ck">✓</span></td><td><span class="dk">—</span></td></tr>
+          <tr class="sr"><td colspan="5">Google Business Profile</td></tr>
+          <tr><td>GBP optimization</td><td><span class="pt">Basic</span></td><td><span class="ck">✓</span></td><td><span class="ck">✓</span></td><td><span class="dk">—</span></td></tr>
+          <tr><td>GBP posts (2/week)</td><td><span class="dk">—</span></td><td><span class="ck">✓</span></td><td><span class="ck">✓</span></td><td><span class="dk">—</span></td></tr>
+          <tr><td>Geogrid rank tracking</td><td><span class="pt">5 keywords</span></td><td><span class="pt">10 keywords</span></td><td><span class="pt">15 keywords</span></td><td><span class="dk">—</span></td></tr>
+          <tr class="sr"><td colspan="5">Content & SEO</td></tr>
+          <tr><td>Monthly blog post</td><td><span class="dk">—</span></td><td><span class="ck">✓</span></td><td><span class="ck">✓</span></td><td><span class="dk">—</span></td></tr>
+          <tr><td>Monthly YouTube video</td><td><span class="dk">—</span></td><td><span class="ck">✓</span></td><td><span class="ck">✓</span></td><td><span class="dk">—</span></td></tr>
+          <tr><td>Organic website SEO</td><td><span class="dk">—</span></td><td><span class="dk">—</span></td><td><span class="ck">✓</span></td><td><span class="dk">—</span></td></tr>
+          <tr><td>Location page buildout</td><td><span class="dk">—</span></td><td><span class="dk">—</span></td><td><span class="pt">1–2/mo</span></td><td><span class="dk">—</span></td></tr>
+          <tr><td>Short-form video clips</td><td><span class="dk">—</span></td><td><span class="dk">—</span></td><td><span class="pt">Up to 8/mo</span></td><td><span class="dk">—</span></td></tr>
+          <tr class="sr"><td colspan="5">AI & Full Web</td></tr>
+          <tr><td>AI search (ChatGPT, Perplexity)</td><td><span class="dk">—</span></td><td><span class="pt">Basic</span></td><td><span class="ck">✓</span></td><td><span class="dk">—</span></td></tr>
+          <tr><td>Voice search + in-car GPS</td><td><span class="dk">—</span></td><td><span class="dk">—</span></td><td><span class="ck">✓</span></td><td><span class="dk">—</span></td></tr>
+          <tr><td>AI citation tracking</td><td><span class="dk">—</span></td><td><span class="dk">—</span></td><td><span class="ck">✓</span></td><td><span class="dk">—</span></td></tr>
+          <tr class="sr"><td colspan="5">Brand & Reporting</td></tr>
+          <tr><td>Live custom dashboard</td><td><span class="ck">✓</span></td><td><span class="ck">✓</span></td><td><span class="ck">✓</span></td><td><span class="dk">—</span></td></tr>
+          <tr><td>Monthly strategy call</td><td><span class="dk">—</span></td><td><span class="ck">✓</span></td><td><span class="ck">✓</span></td><td><span class="dk">—</span></td></tr>
+          <tr><td>Brand kit + logo + slogan</td><td><span class="dk">—</span></td><td><span class="dk">—</span></td><td><span class="dk">—</span></td><td><span class="ck">✓</span></td></tr>
+          <tr><td>Social media setup</td><td><span class="dk">—</span></td><td><span class="dk">—</span></td><td><span class="dk">—</span></td><td><span class="ck">✓</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ═══ SERVICES ═══ -->
+<section id="services" class="section bg-white">
+<div class="wrap">
+  <div class="lbl">Services</div>
+  <h2 class="h2">Every service we offer, explained.</h2>
+  <p class="sub">Click any service to read the full breakdown.</p>
+
+  <div class="service-tabs" id="serviceTabs">
+    <button class="stab active" onclick="showTab('lsa')">Local Service Ads</button>
+    <button class="stab" onclick="showTab('ghl')">GHL Dashboard</button>
+    <button class="stab" onclick="showTab('reviews')">Review System</button>
+    <button class="stab" onclick="showTab('ppc')">Google Ads (PPC)</button>
+    <button class="stab" onclick="showTab('fb')">Facebook Ads</button>
+    <button class="stab" onclick="showTab('web')">Web Design</button>
+  </div>
+
+  <!-- LSA TAB -->
+  <div class="tab-panel active" id="tab-lsa">
+    <div class="service-hero">
+      <div class="sh-eyebrow">Local Service Ads · Included in All Packages</div>
+      <div class="sh-title">The highest ROI ad platform<br>for home service companies.</div>
+      <p class="sh-sub">You pay per lead, not per click. Your ad shows above everything else on Google. We set it up, manage it, and run a custom in-house automation system that handles every lead automatically.</p>
+      <div class="sh-stats">
+        <div class="sh-stat"><span class="sh-stat-n">Pay/lead</span><span class="sh-stat-l">Not per click — only when contacted</span></div>
+        <div class="sh-stat"><span class="sh-stat-n">#1</span><span class="sh-stat-l">Position on Google — above everything</span></div>
+        <div class="sh-stat"><span class="sh-stat-n">30–60</span><span class="sh-stat-l">Minutes saved daily vs. manual management</span></div>
+        <div class="sh-stat"><span class="sh-stat-n">$0</span><span class="sh-stat-l">Extra cost — included in all packages</span></div>
+      </div>
+    </div>
+    <div class="callout callout-green" style="margin-bottom:1.5rem">
+      <div class="ct">Built in-house — not a tool you can buy anywhere</div>
+      <div class="cb">Our AI automation reviews every call, scores each lead, marks it booked or archived, flags disputes for refunds, and sends follow-up messages automatically. Google uses your booking rate and response time as ranking signals — better lead management means a higher position in the results.</div>
+    </div>
+    <div class="bar-wrap fade-up">
+      <div class="bar-hd"><div class="bar-title">Lead volume growth — Gravity Roofing (Florida)</div><span class="bar-badge">Real data</span></div>
+      <div class="bar-body">
+        <div class="bar-row"><span class="bar-label">Month 1</span><div class="bar-track"><div class="bar-fill" style="width:26%"></div></div><span class="bar-val">50</span></div>
+        <div class="bar-row"><span class="bar-label">Month 3</span><div class="bar-track"><div class="bar-fill" style="width:55%"></div></div><span class="bar-val">107</span></div>
+        <div class="bar-row"><span class="bar-label">Month 6</span><div class="bar-track"><div class="bar-fill" style="width:80%"></div></div><span class="bar-val">155</span></div>
+        <div class="bar-row"><span class="bar-label">Month 12</span><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><span class="bar-val">193</span></div>
+      </div>
+    </div>
+    <div class="dels">
+      <div class="del"><span class="del-icon">⚙️</span><div class="del-title">Full LSA setup</div><div class="del-desc">Profile, categories, service areas, photos — optimized to maximize your Google Guarantee badge and ad relevance.</div><span class="del-tag dt-amber">One-time setup</span></div>
+      <div class="del"><span class="del-icon">✅</span><div class="del-title">Google Guarantee badge</div><div class="del-desc">We facilitate background check and verification. The green checkmark that makes customers choose you.</div><span class="del-tag dt-blue">Builds trust</span></div>
+      <div class="del"><span class="del-icon">🤖</span><div class="del-title">AI lead scoring</div><div class="del-desc">Every call reviewed, scored, and actioned automatically. Booked, archived, or disputed — within minutes.</div><span class="del-tag dt-green">Built in-house</span></div>
+      <div class="del"><span class="del-icon">💰</span><div class="del-title">Dispute management</div><div class="del-desc">Spam, wrong numbers, and unqualified leads flagged and disputed with Google for a full refund.</div><span class="del-tag dt-amber">Recovers spend</span></div>
+    </div>
+    <div class="callout callout-amber">
+      <div class="ct">Garage door and locksmith companies — plan for 3–4 months</div>
+      <div class="cb">Advanced Verification takes 3–4 months. We start day one and run your full setup in parallel. Some of our best LSA results have come from these niches — it's worth the wait.</div>
+    </div>
+  </div>
+
+  <!-- GHL TAB -->
+  <div class="tab-panel" id="tab-ghl">
+    <div class="service-hero">
+      <div class="sh-eyebrow">GHL Dashboard · Included in All Packages</div>
+      <div class="sh-title">Every lead. Every call.<br>Every channel. One place.</div>
+      <p class="sh-sub">Every client gets a fully configured GHL account — live reporting dashboard, call tracking, automated follow-up, centralized inbox, and CRM. We build it. The account is yours.</p>
+      <div class="sh-stats">
+        <div class="sh-stat"><span class="sh-stat-n">Live</span><span class="sh-stat-l">Real-time updates — not monthly PDFs</span></div>
+        <div class="sh-stat"><span class="sh-stat-n">All-in</span><span class="sh-stat-l">Every channel in one view</span></div>
+        <div class="sh-stat"><span class="sh-stat-n">Yours</span><span class="sh-stat-l">You own the account — always</span></div>
+        <div class="sh-stat"><span class="sh-stat-n">$0</span><span class="sh-stat-l">Setup fee — included in all packages</span></div>
+      </div>
+    </div>
+    <div class="dash-mock fade-up">
+      <div class="dash-bar">
+        <div class="dash-dot" style="background:#FF5F57"></div>
+        <div class="dash-dot" style="background:#FEBC2E"></div>
+        <div class="dash-dot" style="background:#28C840"></div>
+        <div class="dash-title">Magnet Marketing SEO — Client Dashboard</div>
+      </div>
+      <div class="dash-body">
+        <div class="dash-tile"><div class="dash-lbl">Total Leads</div><div class="dash-val" style="color:#4ade80">147</div><div class="dash-chg up">↑ 23% this month</div></div>
+        <div class="dash-tile"><div class="dash-lbl">LSA Leads</div><div class="dash-val" style="color:#fff">89</div><div class="dash-chg up">↑ 12 vs last month</div></div>
+        <div class="dash-tile"><div class="dash-lbl">GBP Calls</div><div class="dash-val" style="color:#ADA8F0">41</div><div class="dash-chg up">↑ 37% vs 90 days</div></div>
+        <div class="dash-tile"><div class="dash-lbl">Maps Rank</div><div class="dash-val" style="color:#4ade80">#2</div><div class="dash-chg up">↑ from #7</div></div>
+        <div class="dash-tile"><div class="dash-lbl">Cost/Lead</div><div class="dash-val" style="color:#fff">$4.20</div><div class="dash-chg up">↓ from $6.80</div></div>
+        <div class="dash-tile"><div class="dash-lbl">Reviews</div><div class="dash-val" style="color:#FEBC2E">4.9⭐</div><div class="dash-chg up">+14 this month</div></div>
+        <div class="dash-chart">
+          <div class="dash-chart-lbl">Lead volume — last 8 weeks</div>
+          <div class="dash-bars">
+            <div class="dash-bar-item" style="height:30%;background:#1962A3"></div>
+            <div class="dash-bar-item" style="height:40%;background:#1962A3"></div>
+            <div class="dash-bar-item" style="height:35%;background:#1962A3"></div>
+            <div class="dash-bar-item" style="height:50%;background:#1962A3"></div>
+            <div class="dash-bar-item" style="height:60%;background:#16A34A"></div>
+            <div class="dash-bar-item" style="height:70%;background:#16A34A"></div>
+            <div class="dash-bar-item" style="height:85%;background:#16A34A"></div>
+            <div class="dash-bar-item" style="height:100%;background:#16A34A"></div>
+          </div>
+        </div>
+        <div class="dash-tile"><div class="dash-lbl">AI Citations</div><div class="dash-val" style="color:#ADA8F0">28</div><div class="dash-chg neutral">Bing Copilot</div></div>
+      </div>
+    </div>
+    <div class="inbox-mock fade-up">
+      <div class="inbox-hd"><div class="inbox-title">Unified Inbox</div><span class="inbox-badge">7 unread</span></div>
+      <div class="inbox-chs">
+        <div class="inbox-ch active">All (7)</div>
+        <div class="inbox-ch">SMS (3)</div>
+        <div class="inbox-ch">Facebook (2)</div>
+        <div class="inbox-ch">Email (1)</div>
+        <div class="inbox-ch">Website Chat (1)</div>
+      </div>
+      <div class="inbox-msgs">
+        <div class="inbox-msg"><div class="inbox-av" style="background:#16A34A">JM</div><div><div class="inbox-name">Jake Morrison</div><div class="inbox-preview">Hey I need a quote for roof replacement, I'm in Gilbert...</div></div><div class="inbox-meta"><div class="inbox-time">2 min ago</div><span class="inbox-src src-sms">SMS</span></div></div>
+        <div class="inbox-msg"><div class="inbox-av" style="background:#1877F2">SR</div><div><div class="inbox-name">Sarah Reynolds</div><div class="inbox-preview">Saw your ad — do you guys do same day garage door repair?</div></div><div class="inbox-meta"><div class="inbox-time">18 min ago</div><span class="inbox-src src-fb">Facebook</span></div></div>
+        <div class="inbox-msg"><div class="inbox-av" style="background:#B45309">TC</div><div><div class="inbox-name">Tom Chen</div><div class="inbox-preview">Re: Your quote for gutter installation — can we schedule...</div></div><div class="inbox-meta"><div class="inbox-time">1 hr ago</div><span class="inbox-src src-email">Email</span></div></div>
+      </div>
+    </div>
+    <div class="callout callout-blue">
+      <div class="ct">Your account — always yours</div>
+      <div class="cb">Usage costs pass to you at cost — ~$1/mo per number, ~$0.012/text, ~$0.001/email. Most clients spend $20–40/month. If you ever leave, we transfer full admin access within 5 business days. All your data stays with you.</div>
+    </div>
+  </div>
+
+  <!-- REVIEWS TAB -->
+  <div class="tab-panel" id="tab-reviews">
+    <div class="service-hero">
+      <div class="sh-eyebrow">Review System · $297 one-time · Included in SEO packages</div>
+      <div class="sh-title">More reviews. On autopilot.</div>
+      <p class="sh-sub">NFC tap cards, automated SMS + email sequences, AI review responses, and a TrustIndex widget on your site. One client went from 2–3 reviews per week to 2–3 per day after switching to our NFC card process.</p>
+    </div>
+    <div class="review-flow fade-up">
+      <div class="rf-step"><span class="rf-icon">🏠</span><div class="rf-title">Job finishes</div><div class="rf-desc">Technician shows the work</div><span class="rf-time">On-site</span></div>
+      <div class="rf-step"><span class="rf-icon">📱</span><div class="rf-title">NFC tap</div><div class="rf-desc">Tap card — review page opens</div><span class="rf-time">Instant</span></div>
+      <div class="rf-step"><span class="rf-icon">⭐</span><div class="rf-title">Review left</div><div class="rf-desc">On the spot, satisfaction highest</div><span class="rf-time">60 sec</span></div>
+      <div class="rf-step"><span class="rf-icon">💬</span><div class="rf-title">SMS follow-up</div><div class="rf-desc">Auto text if not reviewed in person</div><span class="rf-time">Same day</span></div>
+      <div class="rf-step"><span class="rf-icon">📧</span><div class="rf-title">Email sequence</div><div class="rf-desc">7-day follow-up if still no review</div><span class="rf-time">Days 3 + 7</span></div>
+      <div class="rf-step"><span class="rf-icon">🤖</span><div class="rf-title">AI response</div><div class="rf-desc">Every review replied to automatically</div><span class="rf-time">Within hours</span></div>
+    </div>
+    <div class="dels">
+      <div class="del"><span class="del-icon">📱</span><div class="del-title">Custom NFC review cards</div><div class="del-desc">Your logo, tap-to-review. Works on any smartphone. 5 included, $10/each additional.</div><span class="del-tag dt-green">Built in-house</span></div>
+      <div class="del"><span class="del-icon">🔗</span><div class="del-title">Review landing page</div><div class="del-desc">Branded leavereviewplease.com page with direct Google review link. Click tracking included.</div><span class="del-tag dt-blue">Custom URL</span></div>
+      <div class="del"><span class="del-icon">💬</span><div class="del-title">GHL SMS + email automation</div><div class="del-desc">3-touch sequence over 7 days. Stops automatically when review is left.</div><span class="del-tag dt-green">Runs in GHL</span></div>
+      <div class="del"><span class="del-icon">🤖</span><div class="del-title">AI review responses</div><div class="del-desc">Positive reviews auto-responded in your voice. Negative reviews flagged for your approval first.</div><span class="del-tag dt-amber">Optional auto-respond</span></div>
+      <div class="del"><span class="del-icon">⭐</span><div class="del-title">TrustIndex widget</div><div class="del-desc">Live Google reviews on your website, updating automatically as new reviews come in.</div><span class="del-tag dt-blue">On your site</span></div>
+      <div class="del"><span class="del-icon">📊</span><div class="del-title">QR code</div><div class="del-desc">For invoices, door hangers, employee badges. Free to create, trackable with Bitly.</div></div>
+    </div>
+    <div class="stats-row fade-up">
+      <div class="stat-item"><span class="stat-n">#1</span><span class="stat-l">Review frequency is the top Maps ranking factor most businesses ignore</span></div>
+      <div class="stat-item"><span class="stat-n">2–3×</span><span class="stat-l">Review velocity increase our clients see after switching to NFC cards</span></div>
+      <div class="stat-item"><span class="stat-n">48hrs</span><span class="stat-l">Max time to respond to a review — Google tracks response rate</span></div>
+      <div class="stat-item"><span class="stat-n">4.0+</span><span class="stat-l">Minimum rating to keep LSA impressions from dropping</span></div>
+    </div>
+  </div>
+
+  <!-- PPC TAB -->
+  <div class="tab-panel" id="tab-ppc">
+    <div class="service-hero">
+      <div class="sh-eyebrow">Google Ads · Available to existing SEO clients</div>
+      <div class="sh-title">Leads today.<br>SEO rankings tomorrow.</div>
+      <p class="sh-sub">SEO builds your rankings over time. PPC gets your phone ringing while it does. We run Google Ads for existing SEO clients — because PPC on a properly built foundation converts significantly better than PPC in isolation.</p>
+      <div class="sh-stats">
+        <div class="sh-stat"><span class="sh-stat-n">13 yrs</span><span class="sh-stat-l">Our media buyer's Google Ads experience</span></div>
+        <div class="sh-stat"><span class="sh-stat-n">Daily</span><span class="sh-stat-l">AI-assisted negative keyword review</span></div>
+        <div class="sh-stat"><span class="sh-stat-n">GHL</span><span class="sh-stat-l">Every call tracked and recorded</span></div>
+      </div>
+    </div>
+    <div class="neg-mock fade-up">
+      <div class="neg-title">Daily AI negative keyword review — most agencies do this monthly</div>
+      <div class="neg-sub">Every day our AI flags irrelevant search terms. Added to negatives within 24 hours — not 30 days.</div>
+      <div class="neg-rows">
+        <div class="neg-row"><span class="neg-kw">how to fix garage door yourself</span><span class="neg-impr">47 impr.</span><span class="neg-action neg-added">Added negative</span></div>
+        <div class="neg-row"><span class="neg-kw">garage door repair near me</span><span class="neg-impr">312 impr.</span><span class="neg-action neg-kept">Kept — high intent</span></div>
+        <div class="neg-row"><span class="neg-kw">garage door parts wholesale</span><span class="neg-impr">23 impr.</span><span class="neg-action neg-added">Added negative</span></div>
+        <div class="neg-row"><span class="neg-kw">emergency garage door repair</span><span class="neg-impr">189 impr.</span><span class="neg-action neg-kept">Kept — high intent</span></div>
+        <div class="neg-row"><span class="neg-kw">garage door repair DIY reddit</span><span class="neg-impr">38 impr.</span><span class="neg-action neg-added">Added negative</span></div>
+      </div>
+    </div>
+    <div class="dels">
+      <div class="del"><span class="del-icon">⚙️</span><div class="del-title">Campaign setup</div><div class="del-desc">Structured by service type, location, and match type. Built to isolate what's working.</div><span class="del-tag dt-amber">One-time setup</span></div>
+      <div class="del"><span class="del-icon">🔍</span><div class="del-title">Daily negative keywords</div><div class="del-desc">AI-assisted review every 24 hours. Bad clicks removed before they drain your budget.</div><span class="del-tag dt-blue">AI-assisted daily</span></div>
+      <div class="del"><span class="del-icon">✍️</span><div class="del-title">Ad copy + A/B testing</div><div class="del-desc">Multiple variations written and tested. Winning versions kept, underperformers replaced.</div></div>
+      <div class="del"><span class="del-icon">🏠</span><div class="del-title">GHL landing pages</div><div class="del-desc">Dedicated landing pages built in GHL — not your homepage. One service, one CTA.</div><span class="del-tag dt-green">Built in GHL</span></div>
+      <div class="del"><span class="del-icon">📞</span><div class="del-title">Call tracking</div><div class="del-desc">Every call tracked, recorded, and attributed in your GHL dashboard.</div><span class="del-tag dt-blue">In your dashboard</span></div>
+      <div class="del"><span class="del-icon">🎯</span><div class="del-title">Retargeting</div><div class="del-desc">Website visitors who didn't call followed with ads on Google Display and YouTube.</div></div>
+    </div>
+    <div class="callout callout-amber">
+      <div class="ct">PPC is available to existing SEO clients only</div>
+      <div class="cb">We've seen what happens when PPC runs without the right foundation. When you're already an SEO client, your website is optimized, GHL is capturing every call, and tracking is live. PPC on that setup converts better and costs less per lead.</div>
+    </div>
+  </div>
+
+  <!-- FB ADS TAB -->
+  <div class="tab-panel" id="tab-fb">
+    <div class="service-hero" style="background:#0a1e3d">
+      <div class="sh-eyebrow" style="background:rgba(24,119,242,.2);border-color:rgba(24,119,242,.3);color:#7EB8FF">Facebook & Instagram Ads · Existing SEO clients only</div>
+      <div class="sh-title">Stay in front of people<br>who already know you.</div>
+      <p class="sh-sub">Facebook Ads work best as a layer on top of SEO — not a replacement for it. Retargeting, lead gen, brand awareness, and Messenger campaigns. As your organic traffic grows, retargeting gets more powerful.</p>
+    </div>
+    <div class="dels">
+      <div class="del"><span class="del-icon">📣</span><div class="del-title">Brand awareness</div><div class="del-desc">Get in front of homeowners in your service area before they have a problem. Targeted by zip, homeowner status, income.</div></div>
+      <div class="del"><span class="del-icon">🎯</span><div class="del-title">Retargeting</div><div class="del-desc">Follow website visitors who didn't call. Gets cheaper as your SEO traffic grows — more visitors to retarget.</div></div>
+      <div class="del"><span class="del-icon">📋</span><div class="del-title">Lead generation forms</div><div class="del-desc">Facebook's native lead forms — pre-filled, low friction. Leads flow directly into GHL for immediate follow-up.</div></div>
+      <div class="del"><span class="del-icon">💬</span><div class="del-title">Messenger ads</div><div class="del-desc">Ad click opens a conversation in Messenger. Managed through your GHL centralized inbox.</div></div>
+    </div>
+    <div class="grid-3 fade-up" style="margin-top:1.5rem">
+      <div class="card"><div class="card-title" style="font-size:16px;margin-bottom:.3rem">Standalone</div><div style="font-size:26px;font-weight:900;color:var(--navy);margin-bottom:.3rem">$1,000<span style="font-size:14px;font-weight:400;color:var(--muted)">/mo</span></div><div class="card-desc">Facebook Ads management for existing SEO clients</div></div>
+      <div class="card" style="border-color:var(--blue-bright)"><div class="card-title" style="font-size:16px;margin-bottom:.3rem">Add-on to SEO</div><div style="font-size:26px;font-weight:900;color:var(--navy);margin-bottom:.3rem">$800<span style="font-size:14px;font-weight:400;color:var(--muted)">/mo</span></div><div class="card-desc">Added to any SEO package — saves $200/mo</div></div>
+      <div class="card"><div class="card-title" style="font-size:16px;margin-bottom:.3rem">Full Stack Bundle</div><div style="font-size:26px;font-weight:900;color:var(--navy);margin-bottom:.3rem">$600<span style="font-size:14px;font-weight:400;color:var(--muted)">/mo</span></div><div class="card-desc">SEO + Google Ads + Facebook Ads — saves $400/mo</div></div>
+    </div>
+    <div class="callout callout-amber" style="margin-top:1rem">
+      <div class="ct">Minimum ad spend recommendation</div>
+      <div class="cb">Facebook Ads don't make sense below $1,000/month in ad spend. Your ad budget goes directly to Facebook — the management fee is separate.</div>
+    </div>
+  </div>
+
+  <!-- WEB DESIGN TAB -->
+  <div class="tab-panel" id="tab-web">
+    <div class="service-hero" style="background:#0f1f40">
+      <div class="sh-eyebrow" style="background:rgba(83,74,183,.2);border-color:rgba(83,74,183,.3);color:#ADA8F0">Web Design · $2,497 flat rate</div>
+      <div class="sh-title">Built to rank.<br>Built to convert.</div>
+      <p class="sh-sub">Every project starts with keyword research and a custom sitemap. From there we write all the content, design the site, build it in Elementor Pro, and optimize it before launch. One flat price.</p>
+      <div class="sh-stats">
+        <div class="sh-stat"><span class="sh-stat-n">Flat rate</span><span class="sh-stat-l">No scope creep, no surprises</span></div>
+        <div class="sh-stat"><span class="sh-stat-n">5</span><span class="sh-stat-l">Homepage design concepts in Figma</span></div>
+        <div class="sh-stat"><span class="sh-stat-n">All</span><span class="sh-stat-l">Content written — not handed back to you</span></div>
+        <div class="sh-stat"><span class="sh-stat-n">48hrs</span><span class="sh-stat-l">Post-launch optimization window</span></div>
+      </div>
+    </div>
+    <div class="timeline">
+      <div class="tl-item fade-up"><div class="tl-n">1</div><div><div class="tl-title">Onboarding call + project brief (Day 1)</div><div class="tl-desc">Recorded call + onboarding form → Gemini project brief → shared with content, design, and dev teams. 50% deposit due to start.</div></div></div>
+      <div class="tl-item fade-up"><div class="tl-n">2</div><div><div class="tl-title">Keyword research + sitemap (Days 1–5)</div><div class="tl-desc">Hand-built keyword map using Ahrefs and GKP. Every page planned around real search demand before anything is designed or written.</div></div></div>
+      <div class="tl-item fade-up"><div class="tl-n">3</div><div><div class="tl-title">5 Figma homepage concepts (Days 5–10)</div><div class="tl-desc">You pick a direction, give feedback, we refine. Development doesn't start until you approve the design.</div></div></div>
+      <div class="tl-item fade-up"><div class="tl-n">4</div><div><div class="tl-title">Development in Elementor Pro (Days 10–25)</div><div class="tl-desc">Full site built on staging. All premium plugins included — Elementor Pro, FlyingPress, TrustIndex. Schema markup, GHL forms, call tracking.</div></div></div>
+      <div class="tl-item fade-up"><div class="tl-n">5</div><div><div class="tl-title">QC, client review, and launch (Days 25–30)</div><div class="tl-desc">Full QC check → staging review → your approval → launch → 48-hour post-launch optimization. 50% balance due on launch day.</div></div></div>
+    </div>
+    <div class="callout callout-amber">
+      <div class="ct">Rebuilding an existing ranking site? That's a different project.</div>
+      <div class="cb">We audit every indexed URL, build a redirect map, and monitor rankings weekly for 60 days post-launch. Quoted separately after a site audit — we won't touch a ranking site without a proper plan.</div>
+    </div>
+  </div>
+
+</div>
+</section>
+
+<!-- ═══ RESULTS ═══ -->
+<section id="results" class="section bg-off">
+<div class="wrap">
+  <div class="lbl">Real Results</div>
+  <h2 class="h2">We don't promise. We deliver.</h2>
+  <p class="sub">Real home service companies. Real numbers. Same industries, same skepticism before they started.</p>
+
+  <div class="geo-wrap fade-up">
+    <div class="geo-title">Geogrid Rank Tracking — Before & After</div>
+    <div class="geo-sub">Visual map showing your ranking position across your service area. Green = top 3. Numbers = your position at each location. This is what we show you every month.</div>
+    <div class="geo-grids">
+      <div>
+        <div class="geo-lbl before">Before — Month 1</div>
+        <div class="geo-grid" id="geo-before"></div>
+      </div>
+      <div>
+        <div class="geo-lbl after">After — Month 6</div>
+        <div class="geo-grid" id="geo-after"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="case-grid">
+    <div class="case-card fade-up">
+      <div class="case-hd"><div class="case-co">Gravity Roofing</div><div class="case-ni">Roofing — Florida (highly competitive)</div></div>
+      <div class="case-bd">
+        <p class="case-challenge">Brand new business, zero online presence, one of the most competitive roofing markets in the country.</p>
+        <div class="case-results">
+          <div class="case-r">$2M+ in revenue within 5 months</div>
+          <div class="case-r">50+ LSA leads in month one</div>
+          <div class="case-r">193 leads in one month, one year later</div>
+          <div class="case-r">Top 5 Maps rankings in FL market</div>
+        </div>
+      </div>
+    </div>
+    <div class="case-card fade-up">
+      <div class="case-hd"><div class="case-co">Advosy Roofing</div><div class="case-ni">Roofing — Multi-state expansion</div></div>
+      <div class="case-bd">
+        <p class="case-challenge">100% reliant on door knocking. Zero online leads. Needed to expand across multiple states.</p>
+        <div class="case-results">
+          <div class="case-r">200–300 organic calls per month</div>
+          <div class="case-r">Expanded to 3 states through SEO</div>
+          <div class="case-r">Revenue funded acquisition of 4 businesses</div>
+        </div>
+      </div>
+    </div>
+    <div class="case-card fade-up">
+      <div class="case-hd"><div class="case-co">Garage Door Solutions</div><div class="case-ni">Garage Doors — Local market</div></div>
+      <div class="case-bd">
+        <p class="case-challenge">Paying 3 agencies, still only getting 14 calls per month.</p>
+        <div class="case-results">
+          <div class="case-r">109 inbound leads in first month of ads</div>
+          <div class="case-r">GBP calls: 14/mo → 37+/mo</div>
+          <div class="case-r">Fired all 3 previous agencies</div>
+        </div>
+      </div>
+    </div>
+    <div class="case-card fade-up">
+      <div class="case-hd"><div class="case-co">Walker Roofing</div><div class="case-ni">Roofing — Ohio</div></div>
+      <div class="case-bd">
+        <p class="case-challenge">Poor website performance and low rankings limiting inbound leads.</p>
+        <div class="case-results">
+          <div class="case-r">40+ phone calls per month from GBP</div>
+          <div class="case-r">On-page SEO health score: 89/100</div>
+          <div class="case-r">Higher rankings across all service areas</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="guarantee fade-up">
+    <div class="g-icon">✓</div>
+    <div>
+      <div class="g-title">No lock-in contracts. No vague reports. No surprises.</div>
+      <div class="g-body">We earn your business every single month. You have a live dashboard showing exactly what's working. If you're not seeing results, you can leave. That's how confident we are in what we do.</div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ═══ CONTACT ═══ -->
+<section id="contact" class="section bg-white">
+<div class="wrap">
+  <div class="lbl">Get Started</div>
+  <h2 class="h2">Ready to talk?</h2>
+  <p class="sub">No pressure, no pitch deck. Just a straightforward conversation about what would actually move the needle for your business.</p>
+
+  <div class="contact-grid">
+    <div>
+      <div class="contact-info-item">
+        <div class="ci-icon-wrap">📞</div>
+        <div>
+          <div class="ci-label">Call or text</div>
+          <a href="tel:+16233527017" class="ci-value">(623) 352-7017</a>
+        </div>
+      </div>
+      <div class="contact-info-item">
+        <div class="ci-icon-wrap">✉️</div>
+        <div>
+          <div class="ci-label">Email</div>
+          <a href="mailto:info@magnetmarketingseo.com" class="ci-value">info@magnetmarketingseo.com</a>
+        </div>
+      </div>
+      <div class="contact-info-item">
+        <div class="ci-icon-wrap">📍</div>
+        <div>
+          <div class="ci-label">Location</div>
+          <span class="ci-value" style="font-size:14px">510 N Alma School Rd<br>Mesa, AZ 85201 Unit 117</span>
+        </div>
+      </div>
+      <div class="contact-info-item">
+        <div class="ci-icon-wrap">🌐</div>
+        <div>
+          <div class="ci-label">Website</div>
+          <a href="https://magnetmarketingseo.com" target="_blank" class="ci-value">magnetmarketingseo.com</a>
+        </div>
+      </div>
+      <div style="margin-top:1.5rem;padding:1.3rem;background:var(--off);border-radius:var(--r2);border:1px solid var(--border)">
+        <div style="font-size:13px;font-weight:700;color:var(--navy);margin-bottom:.5rem">When we talk, I'll want to know:</div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:.4rem">
+          <li style="font-size:13px;color:var(--muted);display:flex;gap:7px"><span style="color:var(--blue-bright)">→</span>How you're currently getting most of your leads</li>
+          <li style="font-size:13px;color:var(--muted);display:flex;gap:7px"><span style="color:var(--blue-bright)">→</span>If you've worked with a marketing agency before — what happened</li>
+          <li style="font-size:13px;color:var(--muted);display:flex;gap:7px"><span style="color:var(--blue-bright)">→</span>Your service area and primary trade</li>
+          <li style="font-size:13px;color:var(--muted);display:flex;gap:7px"><span style="color:var(--blue-bright)">→</span>What growth looks like for you this year</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <div class="contact-form">
+        <h3 style="font-size:18px;font-weight:800;color:var(--navy);margin-bottom:1.3rem">Send us a message</h3>
+        <div class="form-group">
+          <label class="form-label">Your name</label>
+          <input type="text" class="form-input" placeholder="John Smith">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Business name</label>
+          <input type="text" class="form-input" placeholder="Smith Roofing LLC">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Phone number</label>
+          <input type="tel" class="form-input" placeholder="(623) 555-0123">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Your trade / service</label>
+          <select class="form-select">
+            <option value="">Select your trade</option>
+            <option>Roofing</option>
+            <option>Garage Doors</option>
+            <option>HVAC</option>
+            <option>Plumbing</option>
+            <option>Electrical</option>
+            <option>Landscaping / Tree Service</option>
+            <option>Remodeling / Contracting</option>
+            <option>Other home service</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Package you're interested in</label>
+          <select class="form-select">
+            <option value="">Not sure yet</option>
+            <option>Foundation — $397/mo</option>
+            <option>Maps Domination — $1,197/mo</option>
+            <option>Omni Presence — $1,997/mo</option>
+            <option>Brand Foundation — $797 one-time</option>
+            <option>Web Design — $2,497</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Anything else we should know?</label>
+          <textarea class="form-textarea" placeholder="Tell us about your business, your current situation, or any questions you have..."></textarea>
+        </div>
+        <button class="btn btn-primary" style="width:100%;justify-content:center;font-size:15px;padding:14px" onclick="handleSubmit(this)">Send message →</button>
+        <p style="font-size:12px;color:var(--muted);text-align:center;margin-top:.8rem">We respond same day during business hours.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand-text">
+        <span class="footer-brand-main">MAGNET</span>
+        <span class="footer-brand-sub">Marketing SEO</span>
+      </div>
+      <p class="footer-desc">Home service SEO specialists in Gilbert, AZ. We rank home service companies in Google Maps, organic search, LSA, and AI search tools — with live reporting and no lock-in contracts.</p>
+      <div class="footer-contact">
+        <div><a href="tel:+16233527017">(623) 352-7017</a></div>
+        <div><a href="mailto:info@magnetmarketingseo.com">info@magnetmarketingseo.com</a></div>
+        <div>510 N Alma School Rd, Mesa AZ 85201</div>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Packages</div>
+      <ul class="footer-links">
+        <li><a href="#pkg-foundation">Foundation — $397/mo</a></li>
+        <li><a href="#pkg-maps">Maps Domination — $1,197/mo</a></li>
+        <li><a href="#pkg-omni">Omni Presence — $1,997/mo</a></li>
+        <li><a href="#pkg-brand">Brand Foundation — $797</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Services</div>
+      <ul class="footer-links">
+        <li><a href="#services" onclick="showTab('lsa')">Local Service Ads</a></li>
+        <li><a href="#services" onclick="showTab('ghl')">GHL Dashboard</a></li>
+        <li><a href="#services" onclick="showTab('reviews')">Review System</a></li>
+        <li><a href="#services" onclick="showTab('ppc')">Google Ads (PPC)</a></li>
+        <li><a href="#services" onclick="showTab('fb')">Facebook Ads</a></li>
+        <li><a href="#services" onclick="showTab('web')">Web Design</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Company</div>
+      <ul class="footer-links">
+        <li><a href="https://magnetmarketingseo.com" target="_blank">Our Website</a></li>
+        <li><a href="#results">Case Studies</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="tel:+16233527017">Call (623) 352-7017</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2026 Magnet Marketing SEO · Gilbert, AZ · No lock-in contracts</div>
+    <div class="footer-copy">magnetmarketingseo.com</div>
+  </div>
+</footer>
+
+<script>
+// ── GEOGRIDS ──
+function makeGrid(id, data) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  const colors = {1:'#065f46',2:'#059669',3:'#34d399',4:'#6ee7b7',5:'#fbbf24',6:'#f59e0b',7:'#ef4444',8:'#dc2626',9:'#b91c1c',10:'#991b1b',11:'#555',12:'#333'};
+  data.forEach(val => {
+    const cell = document.createElement('div');
+    cell.className = 'geo-cell';
+    cell.style.background = colors[Math.min(val,12)]||'#333';
+    cell.textContent = val > 10 ? '—' : val;
+    el.appendChild(cell);
+  });
+}
+const before = [12,12,11,10,9,8,9, 12,10,9,8,7,6,8, 11,9,7,5,4,5,7, 10,8,5,3,2,4,6, 11,9,6,4,3,5,7, 12,10,7,5,4,6,8, 12,11,8,6,5,7,9];
+const after  = [5,4,3,2,2,3,4,  4,3,2,1,1,2,3,  3,2,1,1,1,2,3,  2,1,1,1,1,1,2,  3,2,1,1,1,2,3,  4,3,2,1,1,2,4,  5,4,3,2,2,3,5];
+makeGrid('geo-before',before);
+makeGrid('geo-after',after);
+
+// ── TABS ──
+function showTab(id) {
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.stab').forEach(b => b.classList.remove('active'));
+  const panel = document.getElementById('tab-'+id);
+  if (panel) panel.classList.add('active');
+  const tabs = document.querySelectorAll('.stab');
+  const tabMap = {lsa:0,ghl:1,reviews:2,ppc:3,fb:4,web:5};
+  if (tabs[tabMap[id]]) tabs[tabMap[id]].classList.add('active');
+  document.getElementById('services')?.scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+// ── NAV ACTIVE ──
+const sections = ['home','packages','services','results','contact'];
+const navLinks = document.querySelectorAll('.nav-links a');
+function setActive() {
+  let cur = '';
+  sections.forEach(id => {
+    const el = document.getElementById(id);
+    if (el && window.scrollY >= el.offsetTop - 80) cur = id;
+  });
+  navLinks.forEach(a => {
+    const href = a.getAttribute('href').replace('#','');
+    a.classList.toggle('active', href === cur);
+  });
+}
+window.addEventListener('scroll', setActive, {passive:true});
+setActive();
+
+// ── MOBILE MENU ──
+function toggleMenu() {
+  const d = document.getElementById('mobileDrawer');
+  d.classList.toggle('open');
+}
+function closeMenu() {
+  document.getElementById('mobileDrawer').classList.remove('open');
+}
+
+// ── FADE UP ──
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, {threshold:0.06});
+document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
+
+// ── FORM ──
+function handleSubmit(btn) {
+  btn.textContent = 'Sending...';
+  btn.disabled = true;
+  setTimeout(() => {
+    btn.textContent = '✓ Message sent — we\'ll be in touch same day';
+    btn.style.background = 'var(--green)';
+  }, 1200);
+}
+</script>
+</body>
+</html>
+
